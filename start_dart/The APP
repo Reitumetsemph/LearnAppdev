@@ -1,0 +1,5 @@
+This app is for a fully functional app that uses Flutter and django
+I wanna use a T-SQL data base but mongodb and postgreSQL was suggested:
+    this was suggested to be for user data, schedules, and ticket/cards
+I need to get the API's for the publice transport to get real time data
+we can use figma for the User interface
