@@ -1,7 +1,7 @@
 void main() {
 ///
 //Dart is similar to maths in Python
-print(2/3);
+//print(2/3);
 
 //Variables
 // <datatype> <variable name> = value based on the data type;
@@ -40,10 +40,10 @@ print( isadult);*/
 
 // now the last data type in for varibles in dart is called dynamic
 //<dynamic> <variable name> = value(any data type) string,int of float(double)
-dynamic somevalue1 = 10;//int
-dynamic somevalue2 = 78.90978;//double(float)
-dynamic somevalue3 = "hosh tokolosh";//str
-dynamic somevalue4 = true;//bool
+//dynamic somevalue1 = 10;//int
+//dynamic somevalue2 = 78.90978;//double(float)
+//dynamic somevalue3 = "hosh tokolosh";//str
+//dynamic somevalue4 = true;//bool
 
 /*print(somevalue1);
 print(somevalue2);
@@ -78,8 +78,8 @@ int firstvalue = 10000;*/
 //print(firstvalue);
 
 //now lets do it with strings
-String greeting = "Hello, World!";//Has a COMMA
-print(greeting);//#Hello, World!
+//String greeting = "Hello, World!";//Has a COMMA
+//print(greeting);//#Hello, World!
 
 /*greeting = "Hello World";//Has no commaa
 print(greeting);//#Hello World*/
@@ -89,9 +89,62 @@ print(greeting);//#Hello World*/
 //print(greeting);
 
 //It is better to use intrapulation
-greeting = "$greeting  Yooooohhho";// you can use curly braces but its not recommended
+//greeting = "$greeting  Yooooohhho";// you can use curly braces but its not recommended
 // you only us curl brackets when it to use functions with strings
 //if you greeting = "$greeting.length Yooooohhho" #Hello, World!.length Yooooohhho
 //RATHER you greeting = "{$greeting.length} Yooooohhho" #12 yooohooo
-print(greeting);
+//print(greeting);
+
+
+//Now we going to start a new type of variable called "var"/"final"/"const"
+//<var/final/const> <variableName> = Value(Any datatype)
+/*var somevalue = 'text';//It can Adapt!!!!
+print(somevalue);
+print(somevalue.runtimeType);//we also get features we that we find when we initiate a varialbe with a "int"
+print(somevalue);*/
+// this  would cause an Error: 
+//somevalue = 10; 
+//ie like:
+//int somevalue = 10// this would have must been a string for you to REASSIGN.
+/*this happens because DART autoumatically assigns
+ the variable name to the specific DATATYPE you have 
+ specified as a value*/
+ /*var somevalue1 = "text";
+ final somevalue2 = DateTime.now(); // the finall variable ou can only assigned once meaning you cannot reassgin it or increment
+ const somevalue3 = "text4";//this means it is constant only constant to on variable
+
+print(somevalue1);
+print(somevalue2);
+print(somevalue3);
+
+print("---------");
+somevalue1 = "Qosh";//var is mutable
+print(somevalue1);*/
+//somevalue2 = "HHAG"; //Final variable ERROR (immutable)
+//somevalue3 = "galalalio";// constant variable already assigned ERROR(immutable)
+
+
+//there will be situtaions here you cannot use the 'var','final','const' for situations below
+
+//now we going to do OPTION VARIABLES
+// this means that your variables can have two values
+//String/int/bool/ and null(ound null safety)
+
+//final can be set to null without the need of a fullstop
+//final somevalue = null;//this will be a dynamic now:(
+
+String? Avalue = '';//this doesn't mean this is null its is just an empty string 
+print(Avalue);    //you get all the features that can be used in a string
+//int some = null;//thisis not aloud in the lastest versions of darrt
+//RATHER YOU :
+int? some = null;
+
+/* when you set something to null you dont have to give it a value ie*/
+String? somevalue;
+print(somevalue);
+somevalue = "312 happy new year";
+print(somevalue.length);
+somevalue = null;
+print(somevalue?.length??0);
+
 } 
